@@ -1,0 +1,16 @@
+body{
+    padding-top: 100px;
+}
+.reg{
+    border-radius: 50px;
+    border: 7px solid rgb(254, 255, 255);
+background-color: rgb(173, 240, 65);
+}
+.buttt{
+ border: solid 2px rgb(0,0,0);
+border-radius: 16px;
+margin-bottom: 10px;
+width: 30%;
+ text-align: left;
+ padding-right: 30px;
+}

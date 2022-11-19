@@ -1,0 +1,15 @@
+.typogra
+{
+    align-self: center;
+    display: grid;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    columns: 3;
+ 
+}
+.body{
+    align-self: center;
+    border-radius: 50px;
+    border: 7px solid rgb(254, 255, 255);
+background-color: rgb(173, 240, 65);
+}

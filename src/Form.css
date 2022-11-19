@@ -1,0 +1,17 @@
+.form-box input, textarea{
+    display: block;
+    width: 100%;
+  
+    margin: .5vw 0 ;
+    border:0;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.form-box textarea{
+    height: 15vh;
+}
+.form-box input{
+    width:50%;
+
+}
