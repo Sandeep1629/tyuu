@@ -19,7 +19,7 @@ axios.get("http://localhost:5000/myprofile",{
       },[])
     if(!token)
     {
-        return <Redirect to='/login'/>
+        return <Redirect to='/Logi'/>
     }
     return(
         <div>

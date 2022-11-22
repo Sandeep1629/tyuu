@@ -44,6 +44,9 @@ const Nav=()=>
           <Typography class="cla3"variant="button" component="div">
           <Link to="/form"><Button class="but"> how to use </Button></Link>
           </Typography>
+          <Typography class="cla3"variant="button" component="div">
+          <Link to="/otp"><Button class="but">otp login </Button></Link>
+          </Typography>
 
           </CardContent>
           </Box>

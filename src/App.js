@@ -16,6 +16,7 @@ import Login from './Login'
 import Myprofile from './Myprofile'; 
   import {BrowserRouter,Route,Switch} from 'react-router-dom'; 
 import Calcc from "./Calcc";
+import otp from "./otp";
   export const store =createContext(); 
 function App  (){ 
     const[token,setToken] = useState(null); 
@@ -39,6 +40,8 @@ function App  (){
         <Route path='/report' component={report}/>
         <Route path='/thank' component={thank}/>
         <Route path='/form' component={form}/>
+        <Route path='/otp' component={otp}/>
+    
       </Switch> 
       </store.Provider>  
       </BrowserRouter>, 
