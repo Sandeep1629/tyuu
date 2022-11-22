@@ -54,4 +54,4 @@ app.delete("/deletebrand/:id",async(req,res)=>
 })
 
 
- app.listen(3000,()=>console.log("server is runnig"))
+ app.listen(process.env.port||3000,()=>console.log("server is runnig"))
