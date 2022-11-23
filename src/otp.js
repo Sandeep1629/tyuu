@@ -1,7 +1,7 @@
 import React from 'react'
 import firebase from './firebase'
 
-
+import Card from '@mui/material/Card';
 class App extends React.Component {
   handleChange = (e) =>{
     const {name, value } = e.target
@@ -32,6 +32,7 @@ class App extends React.Component {
           // user in with confirmationResult.confirm(code).
           window.confirmationResult = confirmationResult;
           console.log("OTP has been sent")
+          alert("otp has sent your mobile number please check my dear customer")
           // ...
         }).catch((error) => {
           // Error; SMS not sent
@@ -57,7 +58,9 @@ class App extends React.Component {
   }
   render() {
     return (
+      <center>
       <div>
+          <Card sx={{ maxWidth:475 }}>
         <h2>Login Form</h2>
         <form onSubmit={this.onSignInSubmit}>
           <div id="sign-in-button"></div>
@@ -70,7 +73,9 @@ class App extends React.Component {
           <input type="number" name="otp" placeholder="OTP Number" required onChange={this.handleChange}/>
           <button type="submit">Submit</button>
         </form>
+        </Card>
       </div>
+      </center>
     )
   }
 }
