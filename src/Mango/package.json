@@ -1,6 +1,6 @@
 {
   "name": "mango",
-  "proxy":"http://localhost:3001/",
+
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
