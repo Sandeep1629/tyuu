@@ -28,4 +28,4 @@ app.get("/display",async(req,res)=>{
         res.json(result);
     });
 });
-    app.listen(3001,()=>console.log("Server Ready."))
+    app.listen(process.env.port || 3001,()=>console.log("Server Ready."))
