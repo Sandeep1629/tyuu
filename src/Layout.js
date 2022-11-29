@@ -30,7 +30,10 @@ const Layout = () => {
               <Typography className="appbar__rightChild"> 
               <Link to='/curr'>  Currency </Link>
               </Typography> 
-
+              <Typography className="appbar__rightChild"> 
+          <Link to='/crp'>  Crpto-Prices
+          </Link>
+              </Typography>
               
               <Typography className="appbar__rightChild"> 
           <Link to='/report'>  Report-us
@@ -39,6 +42,7 @@ const Layout = () => {
               <Typography className="appbar__rightChild"> 
           <Link to='/con'> Contact-us</Link> 
               </Typography> 
+         
               <Typography className="appbar__rightChild"> 
           <Link to='/'>  Logout
           </Link>

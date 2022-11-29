@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom"; 
 import Contact from "./Contact"
 import React from "react"; 
+import Crypto from './Crypto'
 import Money from "./Money";
 import Layout from './Layout'
 import Trac from "./Trac"
@@ -17,6 +18,8 @@ import Myprofile from './Myprofile';
   import {BrowserRouter,Route,Switch} from 'react-router-dom'; 
 import Calcc from "./Calcc";
 import otp from "./otp";
+import Games from "./Games";
+
   export const store =createContext(); 
 function App  (){ 
     const[token,setToken] = useState(null); 
@@ -41,6 +44,9 @@ function App  (){
         <Route path='/thank' component={thank}/>
         <Route path='/form' component={form}/>
         <Route path='/otp' component={otp}/>
+        <Route path='/crp' component={Crypto}/>
+        <Route path='/game' component={Games}/>
+      
     
       </Switch> 
       </store.Provider>  

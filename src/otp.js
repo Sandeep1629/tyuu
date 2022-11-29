@@ -1,6 +1,5 @@
 import React from 'react'
 import firebase from './firebase'
-
 import Card from '@mui/material/Card';
 class App extends React.Component {
   handleChange = (e) =>{
@@ -49,6 +48,7 @@ class App extends React.Component {
       const user = result.user;
       console.log(JSON.stringify(user))
       alert("User is verified")
+      window.location.replace("http://localhost:3000/home")
       // ...
     }).catch((error) => {
       // User couldn't sign in (bad verification code?)
@@ -60,19 +60,28 @@ class App extends React.Component {
     return (
       <center>
       <div>
-          <Card sx={{ maxWidth:475 }}>
-        <h2>Login Form</h2>
+          <Card sx={{ maxWidth:545}}>
+            <hr></hr>
+        <h2>Login with Mobile</h2>
+        <hr></hr>
+        <br></br>
         <form onSubmit={this.onSignInSubmit}>
           <div id="sign-in-button"></div>
           <input type="number" name="mobile" placeholder="Mobile number" required onChange={this.handleChange}/>
+          <br></br>
+          <br></br>
           <button type="submit">Submit</button>
         </form>
-
-        <h2>Enter OTP</h2>
+        <br></br>
+        <br></br>
+       
         <form onSubmit={this.onSubmitOTP}>
           <input type="number" name="otp" placeholder="OTP Number" required onChange={this.handleChange}/>
+          <br></br>
+          <br></br>
           <button type="submit">Submit</button>
         </form>
+        <br></br>
         </Card>
       </div>
       </center>

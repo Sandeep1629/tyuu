@@ -31,7 +31,7 @@ const Nav=()=>
         image={Rim}
         alt="Banking"
       />
-       
+        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
        <Typography class="cla1" variant="inherit"  component="div">
           <Link to="/Logi"> <Button class="but">Login </Button></Link>
           </Typography>
@@ -42,16 +42,14 @@ const Nav=()=>
           <Link to="/rex"><Button class="but"> Admin </Button></Link>
           </Typography>
           <Typography class="cla3"variant="button" component="div">
-          <Link to="/form"><Button class="but"> how to use </Button></Link>
+          <Link to="/form"><Button class="but"> How to use </Button></Link>
           </Typography>
           <Typography class="cla3"variant="button" component="div">
-          <Link to="/otp"><Button class="but">otp login </Button></Link>
+          <Link to="/otp"><Button class="but">Otp login </Button></Link>
           </Typography>
-
+          </Box>
           </CardContent>
           </Box>
-      
-          
           <br>
           </br>
           <hr></hr>

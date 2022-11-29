@@ -2,15 +2,15 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBq1AV3HvM-HCffJJxUAMPyI2jDi9oC7ms",
-  authDomain: "otpsdp-39113.firebaseapp.com",
-  projectId: "otpsdp-39113",
-  storageBucket: "otpsdp-39113.appspot.com",
-  messagingSenderId: "939189718053",
-  appId: "1:939189718053:web:31fb926b29062f2dfc03cc"
+  apiKey: "AIzaSyDUhW3WMvPpIYT5w5DFnRHVogchNqIej3k",
+  authDomain: "sandeep1629-e4e7e.firebaseapp.com",
+  projectId: "sandeep1629-e4e7e",
+  storageBucket: "sandeep1629-e4e7e.appspot.com",
+  messagingSenderId: "72387496413",
+  appId: "1:72387496413:web:9f3889d3ee744305880e34"
 }
 ;
-  // Initialize Firebase
+
   firebase.initializeApp(firebaseConfig);
   
 export default firebase

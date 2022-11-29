@@ -1,7 +1,9 @@
 import './App.css';
 import * as React from 'react';
 import "./Trac"
-
+import Box from '@mui/material/Box';
+import CardMedia from '@mui/material/CardMedia';
+import ilu from './assets/ilu.png'
 import {useState,useEffect} from 'react';
 import axios from 'axios';
 import { Card, Typography } from "@mui/material";
@@ -19,26 +21,41 @@ function App() {
    <center>
    <Typography class="tyu">All Transactions</Typography>
    <hr></hr>
-   <Card sx={{ maxWidth:525 }}>
+
 
     {studList.map((val,key)=>{
     
       
   return <div key={key}>
-     <Card sx={{ maxWidth:525 }}>
-    <Typography class="typogra"variant='h5'>
+
+     <Card sx={{ maxWidth:355}}>
+     <CardMedia 
+        component="img"sx=
+        {{ maxWidth:180}}
+        image={ilu}
+   
+      />
+   
+    <Typography class="typogra"variant='h6'>
   Sender Name : {val.sname}</Typography>
-  <Typography class="typogra"variant='h5'>Reciver Name : {val.rname}</Typography>
-  <Typography class="typogra"variant='h5'>Sent Ammount : {val.sac}</Typography><hr>
+  <Typography class="typogra"variant='h6'>Reciver Name : {val.rname}</Typography>
+  <Typography class="typogra"variant='h6'>Sent Ammount : {val.sac}</Typography><hr>
   
   </hr>
+  <lr></lr>
+
   </Card>
+  
+  <br>
+  </br>
+  
   </div> 
   
 
    
   })}
-   </Card>
+  
+  
    </center>
     </div>
   );

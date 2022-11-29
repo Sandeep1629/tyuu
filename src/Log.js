@@ -38,8 +38,8 @@ const Log=()=>
             <form onSubmit={submitHandler} autoComplete="off">
                 <Typography class="tyu">Login with credentials</Typography>
                 <hr></hr>
-                <input type ="email" onChange={changeHandler} name="email" placeholder='Email'/><br/>
-                <input type ="password" onChange={changeHandler} name="password" placeholder='Password'/><br/>
+                <input type ="email" onChange={changeHandler} name="email" placeholder='Email'autoComplete="new-password"/><br/>
+                <input type ="password" onChange={changeHandler} name="password" placeholder='Password'autoComplete="new-password"/><br/>
                
                 <input type ="Submit"  value="Login"/><br/>
             </form> 

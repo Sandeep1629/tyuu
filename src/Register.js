@@ -30,10 +30,10 @@ const Register=()=>
             <Card sx={{ maxWidth:525 }}>
             
                 <div className='reg'>
-            <form onSubmit={submitHandler}>
+            <form onSubmit={submitHandler}autoComplete="off">
             <Typography class="tyu">Register as new customer</Typography>
             <hr></hr>
-                <input type ="text" onChange={changeHandler} name="username" placeholder='User Name'/><br/>
+                <input type ="text" onChange={changeHandler} name="username" placeholder='User Name' /><br/>
                 <input type ="email" onChange={changeHandler} name="email" placeholder='Email'/><br/>
                 <input type ="password" onChange={changeHandler} name="password" placeholder='Password'/><br/>
                 <input type ="password" onChange={changeHandler}  name="confirmpassword" placeholder='Confirm password'/><br/>
