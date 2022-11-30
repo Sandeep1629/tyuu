@@ -25,8 +25,10 @@ const Log=()=>
             res => setToken(res.data.token)
         )
     }
+   
     if(token)
     {
+     
        return  <Redirect to='/myprofile'/>
     }
     return(

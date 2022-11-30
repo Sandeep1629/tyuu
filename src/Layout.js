@@ -42,6 +42,9 @@ const Layout = () => {
               <Typography className="appbar__rightChild"> 
           <Link to='/con'> Contact-us</Link> 
               </Typography> 
+              <Typography className="appbar__rightChild"> 
+          <Link to='/game'> Try-new</Link> 
+              </Typography> 
          
               <Typography className="appbar__rightChild"> 
           <Link to='/'>  Logout

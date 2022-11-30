@@ -1,7 +1,8 @@
 import React from 'react'
 import firebase from './firebase'
 import Card from '@mui/material/Card';
-class App extends React.Component {
+
+class otp extends React.Component {
   handleChange = (e) =>{
     const {name, value } = e.target
     this.setState({
@@ -60,9 +61,9 @@ class App extends React.Component {
     return (
       <center>
       <div>
-          <Card sx={{ maxWidth:545}}>
+          <Card sx={{ maxWidth:475}}>
             <hr></hr>
-        <h2>Login with Mobile</h2>
+        <h2>Login with Mobile Number</h2>
         <hr></hr>
         <br></br>
         <form onSubmit={this.onSignInSubmit}>
@@ -88,4 +89,4 @@ class App extends React.Component {
     )
   }
 }
-export default App
+export default otp

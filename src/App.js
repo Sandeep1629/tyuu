@@ -18,8 +18,10 @@ import Myprofile from './Myprofile';
   import {BrowserRouter,Route,Switch} from 'react-router-dom'; 
 import Calcc from "./Calcc";
 import otp from "./otp";
-import Games from "./Games";
-
+import Wht from './Wht'
+import Try from './Try'
+import loc from './loc'
+import Snake from './Snake'
   export const store =createContext(); 
 function App  (){ 
     const[token,setToken] = useState(null); 
@@ -45,8 +47,12 @@ function App  (){
         <Route path='/form' component={form}/>
         <Route path='/otp' component={otp}/>
         <Route path='/crp' component={Crypto}/>
-        <Route path='/game' component={Games}/>
-      
+     
+        <Route path='/wet' component={Wht}/>
+        <Route path='/game' component={Try}/>
+        <Route path='/loc' component={loc}/>
+        <Route path='/sec' component={Snake}/>
+
     
       </Switch> 
       </store.Provider>  
