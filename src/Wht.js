@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div>
       <center>
-        <div className="card">
+        <div className="sandy">
           <div className="card-body">
           <Typography class="logy" variant='inherit'>
 Check Wheather

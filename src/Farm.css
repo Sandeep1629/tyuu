@@ -1,0 +1,31 @@
+
+.form-box4{
+    padding-top: 50px;
+
+    padding-left: 450px;
+        max-width: 100%;
+      
+    }
+    .form-box4 input, textarea{
+        display: block;
+        width: 100%;
+        border-radius: 50px;
+      
+        margin: .5vw 0 ;
+        border: 10px;
+        border-radius: 50px;
+        font-size: 19px;
+    }
+    
+    .form-box4 textarea{
+        height: 15vh;
+       
+    }
+    .form-box4 input{
+        width:60%;
+    
+    }
+  
+    
+    
+    

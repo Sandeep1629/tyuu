@@ -1,6 +1,8 @@
 import './App.css';
 import {useState,useEffect} from 'react';
 import axios from 'axios';
+import { Card } from '@mui/material';
+import {Typography } from "@mui/material";
 function App() {
   const [custname,setName]=useState("");
   const [custsend,setsend]=useState("");
@@ -17,9 +19,17 @@ function App() {
   const addToList=()=>{
     axios.post("/newstud",{custname:custname, custAmm:custAmm,custsend:custsend,custprop:custprop,custcAmm:custcAmm,custcar:custcar});
     console.log(custname, custAmm,custsend,custprop,custcAmm,custcar);
+    alert("Sucessfully sended money")
   }
   return (
-    <div className="App">
+ <center>
+  <div className = "form-box">
+  <Card sx={{width:800}}>
+    <div className = "App">
+    <Typography class="tyu">Please enter details</Typography>
+   <br></br>
+
+ 
 <label>Sender Name</label><br/>
 <input type="text"
 onChange={(event)=>setName(event.target.value)}/><br/>
@@ -39,19 +49,12 @@ onChange={(event)=>setAmm(event.target.value)}/><br/>
 <label>Confirm Ammount</label><br/>
 <input type="number"
 onChange={(event)=>setcAmm(event.target.value)}/><br/>
-<button onClick={addToList}>Make Transaction</button>
-  <h5>Transaction Details</h5>
-    {studList.map((val,key)=>{
-  return <div key={key}>
-    <h6>Sender Name:{val.sname}</h6>
-    <h6>Reciver Name:{val.rname}</h6>
-    <h6>Sent Ammount:{val.sac}</h6>
-
-  </div>
-   
-  })}
+    <button onClick={addToList }>Make Transaction</button>
     </div>
-   
+    </Card>
+    </div>
+    </center>
+
   );
   
 }

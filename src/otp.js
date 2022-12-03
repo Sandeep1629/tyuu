@@ -1,7 +1,10 @@
 import React from 'react'
 import firebase from './firebase'
 import Card from '@mui/material/Card';
-
+import './Farm1.css'
+import "./otp.css"
+import jkl from './assets/otpp.png'
+import { Typography } from '@mui/material';
 class otp extends React.Component {
   handleChange = (e) =>{
     const {name, value } = e.target
@@ -60,31 +63,43 @@ class otp extends React.Component {
   render() {
     return (
       <center>
-      <div>
-          <Card sx={{ maxWidth:475}}>
-            <hr></hr>
-        <h2>Login with Mobile Number</h2>
-        <hr></hr>
+            <div className="homeee45"> 
+        <div className="homee__lefte45"> 
+      <div class="form-boxx">
+        
+          <Card class="sandy"sx={{maxWidth:575}}>
+          
+            <Typography class="tyu">Login With Mobile</Typography>
+      
         <br></br>
         <form onSubmit={this.onSignInSubmit}>
           <div id="sign-in-button"></div>
           <input type="number" name="mobile" placeholder="Mobile number" required onChange={this.handleChange}/>
           <br></br>
-          <br></br>
-          <button type="submit">Submit</button>
+         
+          <input type ="submit"  value="submit"/><br/>
         </form>
-        <br></br>
-        <br></br>
+     
        
         <form onSubmit={this.onSubmitOTP}>
           <input type="number" name="otp" placeholder="OTP Number" required onChange={this.handleChange}/>
           <br></br>
-          <br></br>
-          <button type="submit">Submit</button>
+          
+          <input type ="submit"  value="submit"/><br/>
         </form>
-        <br></br>
-        </Card>
+     
+        </Card> 
       </div>
+      </div> 
+      <div className="homee__righte45"> 
+        <div className="homee__imagee45"> 
+          <img src={jkl} alt="Banking" /> 
+        </div> 
+     
+      </div> 
+ 
+      </div>
+   
       </center>
     )
   }

@@ -46,7 +46,7 @@ const {email,password}=req.body;
 let exist=await Registeruser.findOne({email});
 if(!exist)
 {
-    return res.status(400).send("user not found")
+    return res.send("user not found")
 }
 if(exist.password !== password)
 {
@@ -57,7 +57,8 @@ let payload={
         id : exist.id  
     }
 }
-jwt.sign(payload,'jwtSecret',{expiresIn:36000000},
+jwt.sign(payload,'jwtSecret',{expiresIn:3600000},
+
     (err,token)=>
     {
         if(err) throw err;
@@ -86,6 +87,8 @@ res.json(exist);
         return res.status(500).send("server erroe")
     }
 })
+
   app.listen(process.env.port || 5000,()=>{
     console.log("server is runnig")
   })
+  

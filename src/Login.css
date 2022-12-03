@@ -33,6 +33,7 @@ input[type="submit"]:hover {
 .button-container {
   display: flex;
   justify-content: center;
+  padding-right: 50px;
 }
 
 .login-form {
@@ -61,3 +62,55 @@ input[type="submit"]:hover {
   gap: 8px;
   margin: 10px;
 }
+.homeee89 {
+ 
+  padding-bottom: 50px;
+     display: flex;
+ max-height: 150%;
+ width: 100%;
+     flex-wrap: wrap;
+     flex: 2;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 90vh;
+    background-image: url("C:\Users\91879\heroku-master\src\assets\blur.jpg");
+    background-size: cover;
+ 
+   }
+   .homee__lefte89 {
+     padding-top: 30px;
+     max-width: 100%;
+     /* height: 40%; */  
+     flex: 3;
+     padding-right: 50px;
+     /* background-color: red; */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+    
+   }
+   .homee__righte89 {
+     flex:0.5;
+     /* background-color: blue; */
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     padding-right: 50px;
+    
+     
+   }
+ 
+   
+   .homee__imagee89 img {
+     max-height: 108vh;
+     max-height: 108vh;
+    
+     /* background-color: red; */
+   }
+   
+  
+   
+   
+
+  

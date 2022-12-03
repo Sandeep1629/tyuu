@@ -3,6 +3,8 @@ import {useState,useEffect} from 'react';
 import axios from 'axios';
 import { Card } from '@mui/material';
 import {Typography } from "@mui/material";
+import "./Farm6.css"
+import "./Transaction.css"
 function App() {
   const [custname,setName]=useState("");
   const [custsend,setsend]=useState("");
@@ -23,8 +25,8 @@ function App() {
   }
   return (
  <center>
-  <div className = "form-box">
-  <Card sx={{width:800}}>
+  <div className = "form-box6">
+  <Card sx={{width:900}}>
     <div className = "App">
     <Typography class="tyu">Please enter details</Typography>
    <br></br>

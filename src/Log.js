@@ -5,7 +5,8 @@ import { store } from './App';
 import { Redirect } from 'react-router-dom';
 import "./Log.css"
 import vid from './vid.mp4'
-import './Form.css'
+import Login from './assets/wo1.png'
+import './Farm.css'
 const Log=()=>
 {
     const [token,setToken] = useContext(store)
@@ -29,29 +30,44 @@ const Log=()=>
     if(token)
     {
      
-       return  <Redirect to='/myprofile'/>
+       return  <Redirect to='/home'/>
+       
     }
+    
     return(
-        <div className = "form-box">
+        <div className="homeee"> 
+         <div className="homee__lefte"> 
+        <div className = "form-box4">
              <center>
-            
-             <Card sx={{ maxWidth:475 }}>
+           
              <div className='Crd'>
             <form onSubmit={submitHandler} autoComplete="off">
-                <Typography class="tyu">Login with credentials</Typography>
-                <hr></hr>
+                
+             <Typography class="tyu" >
+                Login
+             </Typography>
+            
                 <input type ="email" onChange={changeHandler} name="email" placeholder='Email'autoComplete="new-password"/><br/>
                 <input type ="password" onChange={changeHandler} name="password" placeholder='Password'autoComplete="new-password"/><br/>
                
-                <input type ="Submit"  value="Login"/><br/>
+                <input type ="submit"  value="Login"/><br/>
             </form> 
-            
+          
             </div>
-            </Card>
+          
           
             </center>
-          
+            </div> 
+      </div> 
+      <div className="homee__righte"> 
+        <div className="homee__imagee"> 
+          <img src={Login} alt="Banking" /> 
+        </div> 
+     
+      </div> 
             </div>
+           
+         
       
     ) 
 }

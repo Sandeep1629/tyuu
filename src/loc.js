@@ -17,7 +17,7 @@ const GeoLocation = () => {
         <>
         <center>
 
-            <div className="row">
+            <div className="sandy">
                 <div className="col text-center">
                 <Typography class="logy" variant='inherit'>
 Find My location and ip
@@ -34,13 +34,13 @@ Find My location and ip
                             <div className="col-lg-6 text-center text-dark">
                                 {details && (
                                     <ul className="list-group">
-                                        <li className="list-group-item">
+
                                             Location :{" "}
                                             {`${details.city}, ${details.country_name}(${details.country_code})`}
-                                        </li>
-                                        <li className="list-group-item">
+                                        <br></br>
+                                    
                                             IP: {details.IPv4}
-                                        </li>
+                                       
                                     </ul>
                                 )}
                             </div>

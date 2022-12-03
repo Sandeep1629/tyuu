@@ -9,7 +9,7 @@ import "./Contact.css"
 export default function ActionAreaCard() {
   return (
     <center>
-      <div className='cards'>
+      <div className='sandy'>
     <Card sx={{ maxWidth: 455 }}>
    
         <CardMedia

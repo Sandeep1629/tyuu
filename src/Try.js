@@ -15,6 +15,7 @@ const Log=()=>
 {
 
     return(
+      <div class="uip">
         <div class='loo'>
              <center>
              <Typography class="logy" variant='inherit'>
@@ -65,6 +66,7 @@ Check some cool features by our Website
           
             </center>
           
+            </div>
             </div>
       
     ) 

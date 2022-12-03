@@ -1,5 +1,5 @@
 .board {
-    outline: 3px solid rgb(188, 255, 195);
+    outline: 3px solid rgb(0, 0, 0);
     
   }
   
@@ -10,7 +10,7 @@
   .cell {
     width: 35px;
     height: 35px;
-    outline: 1px solid rgb(134, 154, 189);
+    outline: 1px solid rgb(0, 0, 0);
     display: inline-block;
   }
   

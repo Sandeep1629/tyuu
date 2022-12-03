@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-evenly;
   height: 90vh;
+  background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+
 }
 .home__left {
   /* height: 40%; */  

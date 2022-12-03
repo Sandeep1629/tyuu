@@ -7,9 +7,7 @@
     columns: 3;
  
 }
-.body{
-    align-self: center;
-    border-radius: 50px;
-    border: 7px solid rgb(254, 255, 255);
-background-color: rgb(173, 240, 65);
+.ntg{
+    width: 50px;
 }
+

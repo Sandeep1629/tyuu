@@ -1,0 +1,34 @@
+.buddy{
+ 
+  background-image: linear-gradient(5deg, #21D4FD 0%, #B721FF 100%);
+}
+.appbar__rights {
+    display: flex;
+  
+  }
+  .appbar__rightChilds {
+    color: rgb(0, 0, 0);
+    box-shadow: black;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logo {
+    flex: 1;
+    cursor: pointer;
+  }
+  .app_itemss {
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  .Typo{
+    font-size: medium;
+  }
+  .rex{
+  width: 50px; ;
+  }

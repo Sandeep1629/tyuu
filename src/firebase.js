@@ -2,12 +2,12 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDUhW3WMvPpIYT5w5DFnRHVogchNqIej3k",
-  authDomain: "sandeep1629-e4e7e.firebaseapp.com",
-  projectId: "sandeep1629-e4e7e",
-  storageBucket: "sandeep1629-e4e7e.appspot.com",
-  messagingSenderId: "72387496413",
-  appId: "1:72387496413:web:9f3889d3ee744305880e34"
+  apiKey: "AIzaSyA8ZDN1wylrlv37Z4TdWKMBUUST_ffA_B4",
+  authDomain: "nani-1fbcd.firebaseapp.com",
+  projectId: "nani-1fbcd",
+  storageBucket: "nani-1fbcd.appspot.com",
+  messagingSenderId: "678127202023",
+  appId: "1:678127202023:web:53595b14f56d4f78563c42"
 }
 ;
 

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Rim from './assets/Rim.jpg';
-import "./Login.css";
+
 import { Link } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { Button, Typography } from "@mui/material";
 import Card from '@mui/material/Card';
-
+import "./Farm8.css"
+import "./Login.css"
 function App() {
   // React States
   const [errorMessages, setErrorMessages] = useState({});
@@ -61,7 +62,8 @@ function App() {
 
   // JSX code for login form
   const renderForm = (
-    <div className="form">
+    
+    <div className="form-box570">
       <form onSubmit={handleSubmit}>
         <div className="input-container">
           <label>Username </label>
@@ -83,44 +85,34 @@ function App() {
   return (
     <center>
         
-<div className="body">
-    <Card sx={{ maxWidth:525}}>
+<div className="form-box570">
+    <Card class="sandy"sx={{ maxWidth:525}}>
         <center>
         <div className="home__title"> 
           <Typography variant="h4" component="h4"> 
        Admin Panel
           </Typography> 
         </div> 
-        <br></br>
-      <Avatar
-        alt="Logins"
-        src={Rim}
-        sx={{ width: 250, height: 250}}
-      />
 
-    </center>
-    <div className="app">
-      <div className="login-form">
-      <br></br>
-      <div className="Tpo">
-      <Typography variant="h5" component="h5"> 
-      <Link to="/Logi"> <Button> User Login</Button></Link>
-          </Typography> 
-          <br></br>
-      </div>
+   
+   
+      <div className="Form-box570">
         {isSubmitted ? <div>
-          <Link to="/home"> <Button> successfully logged in</Button>
+          <Link to="/home2"> successfully logged in
           </Link></div> : renderForm}
       </div>
     
        
-    </div>
-    </Card>
-    </div>
+    
     </center>
+    </Card>
+   </div>
+    
+   
+    </center>
+ 
   );
   
 }
-
 export default App;
 

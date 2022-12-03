@@ -1,3 +1,60 @@
-.rrd{
-    background-color: rgb(173, 240, 65); 
+.sandy{
+    border-radius: 45px;
+  max-width: 90%;
+  padding-top: 1px;
+  padding-bottom: 5px;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 }
+.homeee45{
+ 
+  padding-bottom: 50px;
+     display: flex;
+ max-height: 150%;
+ width: 100%;
+     flex-wrap: wrap;
+     flex: 2;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 90vh;
+    background-image: url("C:\Users\91879\heroku-master\src\assets\blur.jpg");
+    background-size: cover;
+ 
+   }
+   .homee__lefte45 {
+     padding-top: 30px;
+     max-width: 100%;
+     /* height: 40%; */  
+     flex: 3;
+     padding-right: 50px;
+     /* background-color: red; */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+    
+   }
+   .homee__righte45 {
+     flex:0.5;
+     /* background-color: blue; */
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     padding-right: 50px;
+    
+     
+   }
+ 
+   
+   .homee__imagee45 img {
+     max-height: 100vh;
+     max-height: 100vh;
+    
+     /* background-color: red; */
+   }
+   
+  
+   
+   
+
+  

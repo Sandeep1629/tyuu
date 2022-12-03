@@ -1,0 +1,31 @@
+
+.form-box5{
+    padding-top: 50px;
+
+    padding-left: 330px;
+        max-width: 70%;
+      
+    }
+    .form-box5 input, textarea{
+        display: block;
+        width: 100%;
+        border-radius: 50px;
+      
+        margin: .5vw 0 ;
+        border: 10px;
+        border-radius: 50px;
+        font-size: 19px;
+    }
+    
+    .form-box5 textarea{
+        height: 15vh;
+       
+    }
+    .form-box5 input{
+        width:60%;
+    
+    }
+  
+    
+    
+    

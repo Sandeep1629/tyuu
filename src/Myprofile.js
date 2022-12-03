@@ -3,8 +3,9 @@ import { useContext,useState,useEffect } from "react";
 import {store} from './App'
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { Card } from "@mui/material";
+import { Button, Card } from "@mui/material";
 import { Redirect } from "react-router-dom";
+import PersonIcon from '@mui/icons-material/Person';
 const Myprofile=()=>
 {
     const [token,setToken] = useContext(store);
@@ -22,13 +23,13 @@ axios.get("http://localhost:5000/myprofile",{
         return <Redirect to='/Logi'/>
     }
     return(
-        <div>
+        <div >
             <center>
-            <Card sx={{maxWidth:525}}>
+            <Card sx={{maxWidth:525,maxHeight:475}}>
             { 
             data &&
             <center>
-            Welcome to user :<Link to='/home'> {data.username}</Link>
+           <br></br>Welcome: {data.username}<hr></hr><Link to='/home'><Button>Click here to enter</Button></Link>
             </center>
 }</Card>
 </center>
