@@ -5,6 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import images from "./assets/perr.png"
 import Box from '@mui/material/Box';
+import Badge from '@mui/material/Badge';
+import MailIcon from '@mui/icons-material/Mail';
 import "./report.css"
 import "./Farm7.css"
 import { Link } from "react-router-dom"; 
@@ -23,6 +25,7 @@ export const ContactUs = () => {
           console.log(error.text);
       });
   };
+  const [count, setCount] = React.useState(0);
 
   return (
     <div className="homeee7"> 
@@ -62,10 +65,11 @@ export const ContactUs = () => {
       <center>
         
 
-      <input type="submit"  value="Send" />
+      <input type="submit"  value="Sunmit" />
 
       </center>
     </form>
+  
   
     </Card>
     

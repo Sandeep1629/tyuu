@@ -1,8 +1,13 @@
 import './App.css';
+import React, { useRef } from 'react';
 import {useState,useEffect} from 'react';
 import axios from 'axios';
 import { Card } from '@mui/material';
 import {Typography } from "@mui/material";
+import Box from '@mui/material/Box';
+import MailIcon from '@mui/icons-material/Mail';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+import Badge from '@mui/material/Badge';
 import "./Farm6.css"
 import "./Transaction.css"
 function App() {
@@ -23,6 +28,7 @@ function App() {
     console.log(custname, custAmm,custsend,custprop,custcAmm,custcar);
     alert("Sucessfully sended money")
   }
+  const [count, setCount] = React.useState(0);
   return (
  <center>
   <div className = "form-box6">
@@ -51,8 +57,17 @@ onChange={(event)=>setAmm(event.target.value)}/><br/>
 <label>Confirm Ammount</label><br/>
 <input type="number"
 onChange={(event)=>setcAmm(event.target.value)}/><br/>
-    <button onClick={addToList }>Make Transaction</button>
+    <button onClick={() => {
+      addToList();
+      setCount(count + 1);
+
+ }} >Make Transaction </button>
+ <br></br>
+  <Badge color="secondary" badgeContent={count}>
+         <AccountBalanceWalletIcon/>
+        </Badge>
     </div>
+   
     </Card>
     </div>
     </center>

@@ -9,7 +9,7 @@ import thank from './thank'
 import Nav from "./Nav"; 
 import trac2 from './trac2'
 import report from "./report"
-import form from './form'
+
 import Transaction from "./Transaction"
 import Register from "./Register"; 
 import Log from "./Log"; 
@@ -49,7 +49,7 @@ function App  (){
         <Route path='/tracc' component={trac2}/>
         <Route path='/report' component={report}/>
         <Route path='/thank' component={thank}/>
-        <Route path='/form' component={form}/>
+      
         <Route path='/otp' component={otp}/>
         <Route path='/crp' component={Crypto}/>
      

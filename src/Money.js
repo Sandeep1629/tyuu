@@ -1,6 +1,6 @@
 import image from "./assets/moneyTransfer.svg"; 
 import "./Money.css"; 
-import Form from "./form"; 
+
 import Transaction from "./Transaction"
 import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
